@@ -723,4 +723,7 @@ form > button:hover {
   .cards-wrapper {
     /* background-color: yellowgreen; */
   }
+  .footer-links {
+    flex-wrap: wrap;
+  }
 }
