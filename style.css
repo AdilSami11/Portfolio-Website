@@ -668,6 +668,9 @@ form > button:hover {
 /* for mobile css @media screen and (max-width: 480px) */
 
 @media screen and (max-width: 480px) {
+  .nav-wrapper {
+    padding: 0 20px;
+  }
   .nav-wrapper i {
     font-size: 1.6rem;
   }
@@ -720,10 +723,17 @@ form > button:hover {
     width: 100%;
     text-align: center;
   }
-  .cards-wrapper {
-    /* background-color: yellowgreen; */
-  }
+
   .footer-links {
     flex-wrap: wrap;
+  }
+
+  /* projects-section */
+  .project-card {
+    padding: 20px 10px;
+  }
+  .service-card {
+    background-color: #ff4d00d8;
+    border: 2px solid #ff4d00f1;
   }
 }
