@@ -9,7 +9,17 @@ body {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-  background-color: #000000; /* Pure black background */
+  background-color: #000000;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #ff4d00;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #000;
 }
 
 .container {
@@ -360,7 +370,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 40px 0;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 20px;
@@ -368,7 +378,7 @@ body {
   cursor: pointer;
 }
 .skills-cards i {
-  font-size: 6.5rem;
+  font-size: 5rem;
   color: #555;
   transition: all 0.3s ease;
 }
@@ -383,7 +393,7 @@ body {
 .tech-card:hover svg {
   color: #ff4d00;
   transform: scale(1.1);
-  filter: drop-shadow(0 0 8px rgba(255, 77, 0, 0.6));
+  filter: drop-shadow(0 0 10px rgba(255, 77, 0, 0.8));
 }
 /* projects-section */
 
@@ -714,6 +724,13 @@ form > button:hover {
     font-weight: 500;
     font-size: 1.1rem;
   }
+  /* skills section */
+  .skills-cards {
+    padding: 30px 0;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* for mobile css @media screen and (max-width: 480px) */
@@ -792,5 +809,18 @@ form > button:hover {
   /* skills - section - title */
   #skills-title {
     margin-bottom: 20px;
+  }
+
+  .skills-wrapper {
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .skills-cards {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 }
