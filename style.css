@@ -824,3 +824,14 @@ form > button:hover {
     padding: 20px 0;
   }
 }
+
+/* @media screen and (max-width: 480px) */
+
+@media screen and (max-width: 394px) {
+  .skills-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .skills-cards {
+    padding: 15px 0;
+  }
+}
